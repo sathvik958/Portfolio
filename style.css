@@ -1,0 +1,382 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+    background-image: url(./img/nav-img.jpg);
+    background-repeat: repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    
+    display: flex;
+    padding: 0 10px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .all-links {
+    display: flex;
+    align-items: center;
+}
+a.nav-links{
+    color: white;
+}
+.navbar .all-links li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 20px;
+    
+}
+
+header .navbar .abc-011{
+    color: blueviolet;
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid blueviolet;
+    border-radius: 25px;
+    background: black;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.github a:hover {
+  color: white;
+  background-color: blueviolet;
+}
+
+.logo{
+    float: left;
+    padding:0px;
+    margin: 0px;
+    height: 60px;
+    width: 150px;
+}
+
+header a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    height: 80px;
+    padding: 15px 0;
+    display: inline-block;
+  }
+
+/* header #github-profile{
+  color: blueviolet;
+  
+} */
+  
+  header a:hover, footer a:hover {
+    color: blueviolet;
+  }
+
+.homepage {
+    background-image:url(./img/background.jpeg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .homepage::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .homepage .content {
+    display: flex;
+    height: 75%;
+    z-index: 3;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .homepage .content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .homepage .content .text {
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .content a {
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px 1200px 0px 200px ;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid #fff;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    color: cyan;
+    background-color: black;
+  }
+  
+  section {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 80px 0 0;
+  }
+  
+  section h1, h3 {
+    padding-left: 10%;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  /* editzzzzzzzzzzzz */
+
+  .contact .row {
+    margin: 60px 0 90px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact .row .col {
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+  }
+  
+  .contact .col p {
+    margin-bottom: 10px;
+  }
+  
+  .contact .col p i {
+    color: #7a7a7a;
+    margin-right: 10px;
+  }
+  
+  .contact form input {
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+  }
+  
+  .contact form textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    height: 150px;
+    outline: none;
+    resize: vertical;
+    border: 1px solid #bfbfbf;
+  }
+  
+  .contact form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2s ease;
+  }
+  
+  .contact form button:hover {
+    background: #525252;
+  }
+  
+  footer {
+    width: 100%;
+    justify-content: center;
+    background:#000;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+ 
+  footer h3{
+    color: blueviolet;
+    position: relative;
+    height: fit-content;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 0px;
+  }
+
+footer>#final{
+  clear: both;
+  display: block;
+  /* margin-left: 350px; */
+  
+  text-align: center;
+}
+
+  
+ 
+footer .link{  
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  clear: both;
+  align-items: center;
+  position: relative;
+}
+
+
+footer >#final >.link >li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin-right: 18px;
+  font-size: 20px;
+  clear: both;
+  
+}
+
+footer a{
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+  height: auto;
+  padding: 15px 0;
+  display: inline-block;
+}
+
+footer .copy-right {
+  justify-content: space-between;
+  color: #fff;
+  text-align: center;
+  clear: both;
+} 
+
+
+/* 
+.link{
+    margin-left: 20px;
+} */
+
+
+  
+   
+  @media screen and (max-width: 600px) {
+    .navbar .all-links {
+      position: fixed;
+      left: -100%;
+      width: 300px;
+      display: block;
+      height: 100vh;
+      top: 75px;
+      background: #333;
+      transition: left 0.3s ease;
+    }
+  
+    .navbar #menu-toggler:checked~.all-links {
+      left: 0;
+    }
+  
+    .navbar .all-links li {
+      font-size: 18px;
+    }
+  
+    .navbar #hamburger-btn {
+      display: block;
+    }
+  
+    section > p {
+      text-align: center;
+    }
+  
+    section .cards .card {
+      width: calc(100% / 2 - 15px);
+      margin-bottom: 30px;
+    }
+  
+    .homepage .content h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  
+    .homepage .content .text {
+      font-size: 17px;
+    }
+  
+    .content a {
+      font-size: 17px;
+      padding: 9px 20px;
+    }
+  
+    .contact .row {
+      flex-direction: column;
+    }
+  
+    .contact .row .col {
+      width: 100%;
+    }
+  
+    .contact .row .col:last-child {
+      margin-top: 40px;
+    }
+  
+    footer a {
+      height: 0;
+    }
+  }
+  
+  @media screen and (max-width: 560px) {
+    section .cards .card {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  
+
+
